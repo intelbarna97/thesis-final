@@ -1,0 +1,65 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.Post:hover {
+  cursor: pointer;
+}
+.Post > a {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Post > img {
+  width: fit-content;
+  max-height: 30rem;
+  min-height: 20rem;
+  object-fit: cover;
+  border-radius: 0.7rem;
+  align-self: center;
+  max-width: 100%;
+}
+
+.PostReaction {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.option {
+  gap: 0.2rem;
+}
+
+.like:hover {
+  color: var(--red-hover);
+}
+
+.comment {
+  color: var(--green);
+}
+
+.comment:hover {
+  color: var(--green-hover);
+}
+
+.share:hover {
+  color: var(--blue-hover);
+}
+.username {
+  color: darkgray;
+  font-size: small;
+}
+.date {
+  display: flex;
+  font-size: small;
+  justify-content: flex-end;
+  color: var(--light-gray);
+}
+
+.desc {
+  padding: 0.5rem;
+}

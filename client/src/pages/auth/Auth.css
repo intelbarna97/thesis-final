@@ -1,0 +1,93 @@
+.Auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 4rem;
+  position: relative;
+}
+
+.Auth > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-left {
+  gap: 2rem;
+}
+
+.auth-left > img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.authForm {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.authForm > div {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Webname > h6 {
+  font-size: 0.85rem;
+}
+.infoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.infoForm > div {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+  width: 90%;
+}
+.infoInput {
+  border: none;
+  outline: none;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  flex: 1;
+  background-color: #111;
+  color: darkgray;
+}
+
+.infoInput:hover {
+  background-color: #222;
+}
+
+.infoButton {
+  padding: 0.5rem 3rem;
+  border-radius: 2rem;
+}
+
+.infoButton:hover {
+  background-color: var(--gray);
+}
+
+@media only screen and (min-width: 300px) {
+  /* small screen: */
+  .Auth-s {
+    display: block;
+  }
+  .infoInput-s {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* normal screen: */
+  .Auth {
+    display: flex;
+  }
+  .infoInput {
+    width: 100%;
+  }
+}

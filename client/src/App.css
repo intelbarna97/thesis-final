@@ -1,0 +1,51 @@
+:root {
+  --black: #242d49;
+  --black-background:#242d4950;
+  --black-background-hover:#242d4966;
+  --gray: rgba(36, 45, 73, 0.65);
+  --light-gray: rgba(100, 110, 139, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(208, 208, 208, 0.25);
+  --buttonColor: rgb(230, 230, 230);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --red: rgb(166,0,33);
+  --green: rgb(61, 188, 103);
+  --blue: rgb(27, 118, 255);
+  --red-hover: rgb(166, 0, 33, 0.25);
+  --green-hover: rgb(61, 188, 103, 0.25);
+  --blue-hover: rgb(27, 118, 255, 0.25);
+}
+
+
+.App{
+  overflow: hidden;
+  color: rgb(230, 230, 230);
+  background-color:black;
+  height: 100vh;
+}
+
+.button:disabled{
+  background-color: black;
+  pointer-events: none;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  color: var(--buttonColor);
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 100ms ease-out;
+}
+
+.button:hover{
+  background-color:#303c60;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar
+{
+  display: none;
+}

@@ -1,0 +1,151 @@
+.Profile {
+  position: relative;
+  display: grid;
+  grid-template-columns: 25rem auto 25rem;
+  gap: 1rem;
+  margin: auto;
+  width: 90rem;
+  padding: 1rem 1rem;
+  overflow: auto;
+  height: 100vh;
+}
+
+.ProfileCenter {
+  height: 100vh;
+  overflow: auto;
+}
+
+@media only screen and (min-width: 200px) {
+  /* small screen: */
+  .Profile {
+    display: block;
+    width: 90%;
+  }
+
+  .LeftSide {
+    display: none;
+  }
+
+  .CreatePost > div {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 1rem;
+  }
+
+  .FollowersComponent {
+    display: none;
+  }
+  .Search > input {
+    width: 70%;
+  }
+  .Search {
+    width: 50%;
+  }
+
+  .PostOptions {
+    width: 80%;
+  }
+
+  .Posts {
+    overflow: hidden;
+    height: auto;
+  }
+  .App {
+    overflow: auto;
+  }
+
+  .RightSide {
+    display: none;
+  }
+  .ProfileLeft > div {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* normal screen: */
+  .navbar {
+    display: none;
+  }
+
+  .FollowersComponent {
+    display: flex;
+  }
+  .Profile {
+    display: grid;
+    width: 64rem;
+    padding: 1rem 1rem;
+    grid-template-columns: 14rem auto 14rem;
+  }
+  .FollowersComponent {
+    width: 80%;
+    border-radius: 0.7rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .ProfileComponent {
+    display: flex;
+  }
+
+  .LeftSide {
+    display: flex;
+  }
+
+  .CreatePost > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .PostOptions {
+    width: 100%;
+  }
+
+  .Posts {
+    overflow: auto;
+  }
+  .App {
+    overflow: hidden;
+  }
+
+  .RightSide {
+    display: flex;
+  }
+
+  .CenterLane {
+    height: 100vh;
+  }
+
+  .ProfileLeft > div {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* 2k screen: */
+  .Profile {
+    display: grid;
+    width: 90rem;
+    grid-template-columns: 25rem auto 25rem;
+  }
+  .FollowersComponent {
+    width: 80%;
+    border-radius: 0.7rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .ProfileComponent {
+    display: flex;
+  }
+  .Search > input {
+    width: 100%;
+  }
+  .Search {
+    width: 70%;
+  }
+}

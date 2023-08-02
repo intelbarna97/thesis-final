@@ -1,0 +1,19 @@
+import mongoose from "mongoose";
+
+const PostSchema = mongoose.Schema(
+  {
+    userId: { type: String, required: true },
+    desc: String,
+    likes: [],
+    image: String,
+    comments: [],
+    categories: [],
+    parent: { type: String, required: false },
+  },
+  {
+    timestamps: true,
+  }
+);
+
+var PostModel = mongoose.model("Posts", PostSchema);
+export default PostModel;

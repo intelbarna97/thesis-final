@@ -1,0 +1,52 @@
+.ProfileComponent {
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ProfileImage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProfileImage>img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50%;
+    position: relative;
+    bottom: -2rem;
+    box-shadow: var(--profileShadow);
+}
+
+.ProfileName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.FollowStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.FollowStatus>div {
+    display: flex;
+    gap: 2rem;
+    font-size: small;
+}
+
+.follow {
+    cursor: pointer;
+}

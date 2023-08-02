@@ -1,0 +1,7 @@
+.CenterLane{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+    height: 100vh;
+}
